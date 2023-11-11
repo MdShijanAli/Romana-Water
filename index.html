@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      
+     <!-- Navbar -->
+
+     <nav id="mainNavbar" class="bg-[#1D4DA133] float-left shadow-md fixed z-[99] w-full">
+      <div class="max-w-7xl mx-auto px-6  flex  items-center justify-between ">
+        <div class="lg:flex items-center justify-between w-full py-2">
+              <div class="w-[150px]">
+                <a href="/" class="flex items-center">
+                  <img src="./images/logo.png" class="h-full w-full mr-3" alt="Logo">
+              </a>
+              </div>
+      
+              <div class="hidden w-full lg:flex lg:w-auto" id="navbar-sticky">
+                <ul class="flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 p-4 md:p-0 mt-4 font-semibold text-black border border-gray-100 rounded-lg md:border-0">
+                    <a href="/"><li class="my-3 pb-1 menu-item lg:my-0">Home </li></a>
+                    <a href="./pages/about-us.html"> <li class="my-3 pb-1 menu-item lg:my-0">Company Profile</li></a>
+                    <a href="./pages/pay-bill.html"> <li class="my-3 pb-1 menu-item lg:my-0">Products</li></a>
+                    <a href="./pages/coverage.html"><li class="my-3 pb-1 menu-item lg:my-0">Media</li></a>
+                    <a href="./pages/ftp-server.html"> <li class="my-3 pb-1 menu-item lg:my-0">Events</li></a>
+                    <a href="./pages/contact.html"><li class="my-3 pb-1 menu-item lg:my-0">Contact Us</li></a>
+                    <a href="./pages/self-care.html">
+                        <button type="button" class="px-5 py-2 w-full rounded-full bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white mt-5 lg:mt-0"> <li class="">Order Online</li></button>
+                    </a>
+            
+                </ul>
+              </div>
+        </div>
+    
+    <!-- drawer init and show -->
+    <div class="text-center">
+      <button class="inline-flex md:hidden items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  " type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+        <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+      </button>
+    </div>
+    <!-- drawer component -->
+    <div id="drawer-navigation" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
+      <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+        <span class="sr-only">Close menu</span>
+     </button>
+      <div class="w-[150px] mx-auto">
+        <a href="/" class="flex items-center">
+          <img src="../images/logo.png" class="h-full w-full mr-3" alt="Flowbite Logo">
+      </a>
+      </div>
+      <ul class="flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 py-4 md:p-0 mt-4 font-semibold text-black rounded-lg  md:border-0 md:bg-white">
+        <a href="/"><li class="my-3 pb-1 menu-item lg:my-0">Home </li></a>
+        <a href="./pages/packeges.html"><li class="my-3 pb-1 menu-item lg:my-0">Packages</li></a>
+        <a href="./pages/about-us.html"> <li class="my-3 pb-1 menu-item lg:my-0">About Us</li></a>
+        <a href="./pages/pay-bill.html"> <li class="my-3 pb-1 menu-item lg:my-0">Pay Bill</li></a>
+        <a href="./pages/coverage.html"><li class="my-3 pb-1 menu-item lg:my-0">Coverage</li></a>
+        <a href="./pages/ftp-server.html"> <li class="my-3 pb-1 menu-item lg:my-0">FTP Server</li></a>
+        <a href="./pages/contact.html"><li class="my-3 pb-1 menu-item lg:my-0">Contact Us</li></a>
+        <a href="./pages/self-care.html">
+            <button type="button" class="lg:w-28 h-10 w-full rounded-full bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white mt-5 lg:mt-0"> <li class="">Self Care</li></button>
+        </a>
+    </ul>
+    </div>
+      </div>
+    </nav>
+
+      <!-- Slider -->
+
+      <div class="z-0">
+        <div class="">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/Banner-01.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/Banner-02.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/Banner-03.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./images/Banner-04.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/Banner-01.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/Banner-02.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/Banner-03.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./images/Banner-04.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

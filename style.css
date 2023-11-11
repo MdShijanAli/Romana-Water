@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* Here CSS Code */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+h1,h2,h3,h4,h5,h6,p,span,a,li{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1F2937; /* Change to your desired hover color */
+  transition: width 0.3s ease-in-out; /* Adjust the duration as needed */
+}
+
+.menu-item:hover::before {
+  width: 100%;
+}
+
+.scrolled {
+  background-color: #fff !important; /* You may need to adjust this color */
+  transition: background-color 0.3s ease-in-out;
+}
