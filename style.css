@@ -33,6 +33,7 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
 }
 
 .scrolled {
-  background-color: #fff !important; /* You may need to adjust this color */
+  background-color: #F7EBEC !important; /* You may need to adjust this color */
   transition: background-color 0.3s ease-in-out;
 }
+

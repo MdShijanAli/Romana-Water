@@ -21,3 +21,9 @@ import './style.css'
   // Listen for the scroll event and call the handleScroll function
   window.addEventListener('scroll', handleScroll);
 
+
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  document.getElementById("currentYear").textContent = currentYear;
+  
+  

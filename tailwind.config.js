@@ -12,8 +12,8 @@ export default {
       colors: {
         // my custom colors 
         'primary': '#003376', 
-        'secondary': '#F9A524', 
-        'third': '#374151', 
+        'secondary': '#363394', 
+        'third': '#F7EBEC', 
         'background': '#E7F0FD',
         'paragraph': '#1D306D',
       },
@@ -21,7 +21,9 @@ export default {
         // my custom font sizes 
         'h1': '36px',
         'paragraph': '15px',
-         'h6': '16px',
+         'h5': '16px',
+        'h6': '14px',
+         'p': '12px'
       },
       boxShadow: {
         'bottom-right': '8px 8px 7px rgba(0,0,0,.3)',
