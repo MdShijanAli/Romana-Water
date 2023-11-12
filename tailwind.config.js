@@ -23,7 +23,9 @@ export default {
         'paragraph': '15px',
          'h5': '16px',
         'h6': '14px',
-         'p': '12px'
+        'p': '12px',
+        'h3': '13px',
+         'h4': '18px'
       },
       boxShadow: {
         'bottom-right': '8px 8px 7px rgba(0,0,0,.3)',
