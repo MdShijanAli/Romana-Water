@@ -6,6 +6,7 @@ export default {
     "./node_modules/flowbite/**/*.js",
     "*.{js,ts,jsx,tsx,html}",
     "./pages/**/*.{js,ts,jsx,tsx,html}",
+    'node_modules/preline/dist/*.js',
   ],
   theme: {
     extend: {
@@ -32,6 +33,9 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require('preline/plugin'),
+  ],
 }
 
