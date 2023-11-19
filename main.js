@@ -1,4 +1,3 @@
-import './style.css'
 
 
   // Get the navbar element
