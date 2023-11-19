@@ -10,7 +10,7 @@ export default defineConfig({
         contact: resolve(__dirname, 'pages/contact.html'),
 
         style: resolve(__dirname, 'style.css'), 
-        tailwind: resolve(__dirname, 'tailwind.config.css'), 
+        tailwind: resolve(__dirname, 'tailwind.config.js'), 
         main: resolve(__dirname, 'main.js'),
       },
     },
