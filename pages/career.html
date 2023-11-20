@@ -15,10 +15,9 @@
   </head>
   <body>
    
-<!-- Navbar -->
+ <!-- Navbar -->
 
-
-<nav id="mainNavbar" class="bg-[#1D4DA133] float-left shadow-md top-0 fixed z-[99] w-full">
+ <nav id="mainNavbar" class="bg-[#1D4DA133] float-left shadow-md top-0 fixed z-[99] w-full">
   <div class="max-w-7xl mx-auto px-6 flex  items-center justify-between ">
     <div class="flex items-center justify-between w-full py-2">
           <div class="lg:w-[180px] sm:w-[100px] w-[80px]">
@@ -42,7 +41,7 @@
               <a class="my-3 pb-2 menu-item lg:my-0" href="/">Media</a> 
             </li>
             <li>
-              <a class="my-3 pb-2 menu-item lg:my-0" href="./pages/career.html">Career</a> 
+              <a class="my-3 pb-2 menu-item lg:my-0" href="./career.html">Career</a> 
             </li>
         
             <li class="">
@@ -91,7 +90,7 @@
               <a class="my-1" href="/">Media</a> 
             </li>
             <li>
-              <a class="my-1" href="/">Career</a> 
+              <a class="my-1" href="./career.html">Career</a> 
             </li>
             
             <li class="">
@@ -109,131 +108,131 @@
   </div>
 </nav>
 
-  <!-- Modal -->
+<!-- Modal -->
 
 
-  <div id="booking-modal" class="hs-overlay hs-overlay-backdrop-open:bg-primary/70 hidden w-full h-full fixed top-0 start-0 z-[100] overflow-x-hidden overflow-y-auto pointer-events-none">
-    <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
-      <div class="flex flex-col bg-white border shadow-sm rounded-sm pointer-events-auto dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-        <div class="">
-          <div class="flex justify-between items-center border-b dark:border-gray-700 py-3 px-4">
-            <h1 class="md:text-h1 text-xl sm:text-2xl font-bold text-primary">Order Online</h1>
-            <img class="md:w-24 sm:w-20 w-16" src="./images/logo.png" alt="">
-          </div>
-  
-          <div class="mt-5">
-           
-  
-        
-            <!-- Form -->
-            <form>
-              <div class="grid gap-y-4 p-4">
-                <!-- Form Group -->
-                <div class="sm:flex grid sm:items-center gap-5">
-                  <div class="sm:w-1/2 w-full">
-                  <div class="relative">
-                    <input type="text" id="name" name="name" placeholder="Name" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                  </div>
-                  </div>
-                  <div class="sm:w-1/2 w-full">
-                  <div class="relative">
-                    <input type="email" id="email" name="email" placeholder="Email" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" required aria-describedby="email-error">
-                    <div class="hidden absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
-                      <svg class="h-5 w-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                      </svg>
-                    </div>
-                  </div>
-                  <p class="hidden text-xs text-red-600 mt-2" id="email-error">Please include a valid email address so we can get back to you</p>
+<div id="booking-modal" class="hs-overlay hs-overlay-backdrop-open:bg-primary/70 hidden w-full h-full fixed top-0 start-0 z-[100] overflow-x-hidden overflow-y-auto pointer-events-none">
+  <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+    <div class="flex flex-col bg-white border shadow-sm rounded-sm pointer-events-auto dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+      <div class="">
+        <div class="flex justify-between items-center border-b dark:border-gray-700 py-3 px-4">
+          <h1 class="md:text-h1 text-xl sm:text-2xl font-bold text-primary">Order Online</h1>
+          <img class="md:w-24 sm:w-20 w-16" src="./images/logo.png" alt="">
+        </div>
+
+        <div class="mt-5">
+         
+
+      
+          <!-- Form -->
+          <form>
+            <div class="grid gap-y-4 p-4">
+              <!-- Form Group -->
+              <div class="sm:flex grid sm:items-center gap-5">
+                <div class="sm:w-1/2 w-full">
+                <div class="relative">
+                  <input type="text" id="name" name="name" placeholder="Name" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                </div>
+                </div>
+                <div class="sm:w-1/2 w-full">
+                <div class="relative">
+                  <input type="email" id="email" name="email" placeholder="Email" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" required aria-describedby="email-error">
+                  <div class="hidden absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
+                    <svg class="h-5 w-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
                   </div>
                 </div>
-
-                <div class="sm:flex grid sm:items-center gap-5">
-                  <div class="sm:w-1/2 w-full">
-                  <div class="relative">
-                    <input type="tel" id="tell" name="tell" placeholder="Telephone" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                  </div>
-                  </div>
-                  <div class="sm:w-1/2 w-full">
-                  <div class="relative">
-                    <input type="number" id="phone" name="phone" placeholder="Phone" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                  </div>
-                  </div>
-                  </div>
-                <div class="sm:flex grid sm:items-center gap-5">
-                  <div class="sm:w-1/2 w-full">
-                  <div class="relative">
-                    <input type="text" id="area" name="area" placeholder="Area" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                  </div>
-                  </div>
-                  <div class="sm:w-1/2 w-full">
-                  <div class="relative">
-                    <input type="text" id="flat" name="flat" placeholder="Flat/House" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                  </div>
-                  </div>
-                  </div>
-                <div class="sm:flex grid sm:items-center gap-5">
-                  <div class="sm:w-1/2 w-full">
-                  <div class="relative">
-                    <input type="text" id="way" name="way" placeholder="Way No" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                  </div>
-                  </div>
-                  <div class="sm:w-1/2 w-full">
-                  <div class="relative">
-                    <input type="text" id="building" name="building" placeholder="Building" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                  </div>
-                  </div>
-                  </div>
-
-                  <div>
-                    <select class="py-3 px-4 pe-9 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                      <option disabled selected>— Select —</option>
-                        <option value="Mai Alkaline 500 ML" data-id="254">Mai Alkaline 500 ML</option>
-                        <option value="Mai Alkaline 1.5 LTR" data-id="251">Mai Alkaline 1.5 LTR</option>
-                        <option value="Manual Water Pump with 5 Gallon  Returnable Bottle" data-id="256">Manual Water Pump with 5 Gallon  Returnable Bottle</option>
-                        <option value="SIFR 500 ML" data-id="148">SIFR 500 ML</option>
-                        <option value="SIFR 1.5 LTR" data-id="154">SIFR 1.5 LTR</option>
-                        <option value="SIFR 5 Gallon" data-id="156">SIFR 5 Gallon</option>
-                        <option value="5G - Returnable" data-id="152">5G - Returnable</option>
-                        <option value="4G - Non Returnable" data-id="141">4G - Non Returnable</option>
-                        <option value="5 LTR" data-id="146">5 LTR</option>
-                        <option value="1.5 LTR" data-id="150">1.5 LTR</option>
-                        <option value="500 ML" data-id="135">500 ML</option>
-                        <option value="330 ML" data-id="139">330 ML</option>
-                        <option value="200 ML" data-id="133">200 ML</option>
-                        <option value="Cup 100ml/200ml" data-id="252">Cup 100ml/200ml</option>
-                    </select>
-                  </div>
-
-                  <div class="relative">
-                    <textarea id="hs-floating-textarea" class="peer p-4 block w-full border border-[#9d9d9d] rounded-sm text-sm placeholder:text-transparent focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600
-                    focus:pt-6
-                    focus:pb-2
-                    [&:not(:placeholder-shown)]:pt-6
-                    [&:not(:placeholder-shown)]:pb-2
-                    autofill:pt-6
-                    autofill:pb-2" placeholder="This is a textarea placeholder"></textarea>
-                    <label for="hs-floating-textarea" class="absolute top-0 start-0 p-4 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
-                      peer-focus:text-xs
-                      peer-focus:-translate-y-1.5
-                      peer-focus:text-gray-500
-                      peer-[:not(:placeholder-shown)]:text-xs
-                      peer-[:not(:placeholder-shown)]:-translate-y-1.5
-                      peer-[:not(:placeholder-shown)]:text-gray-500">Address</label>
-                  </div>
-                <!-- End Form Group -->
-  
-      
-
-                <button type="submit" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-sm border border-transparent bg-primary text-white hover:bg-secondary disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Submit</button>
+                <p class="hidden text-xs text-red-600 mt-2" id="email-error">Please include a valid email address so we can get back to you</p>
+                </div>
               </div>
-            </form>
-            <!-- End Form -->
-          </div>
+
+              <div class="sm:flex grid sm:items-center gap-5">
+                <div class="sm:w-1/2 w-full">
+                <div class="relative">
+                  <input type="tel" id="tell" name="tell" placeholder="Telephone" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                </div>
+                </div>
+                <div class="sm:w-1/2 w-full">
+                <div class="relative">
+                  <input type="number" id="phone" name="phone" placeholder="Phone" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                </div>
+                </div>
+                </div>
+              <div class="sm:flex grid sm:items-center gap-5">
+                <div class="sm:w-1/2 w-full">
+                <div class="relative">
+                  <input type="text" id="area" name="area" placeholder="Area" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                </div>
+                </div>
+                <div class="sm:w-1/2 w-full">
+                <div class="relative">
+                  <input type="text" id="flat" name="flat" placeholder="Flat/House" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                </div>
+                </div>
+                </div>
+              <div class="sm:flex grid sm:items-center gap-5">
+                <div class="sm:w-1/2 w-full">
+                <div class="relative">
+                  <input type="text" id="way" name="way" placeholder="Way No" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                </div>
+                </div>
+                <div class="sm:w-1/2 w-full">
+                <div class="relative">
+                  <input type="text" id="building" name="building" placeholder="Building" class="py-3 px-4 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                </div>
+                </div>
+                </div>
+
+                <div>
+                  <select class="py-3 px-4 pe-9 block w-full border border-[#9d9d9d] rounded-sm text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                    <option disabled selected>— Select —</option>
+                      <option value="Mai Alkaline 500 ML" data-id="254">Mai Alkaline 500 ML</option>
+                      <option value="Mai Alkaline 1.5 LTR" data-id="251">Mai Alkaline 1.5 LTR</option>
+                      <option value="Manual Water Pump with 5 Gallon  Returnable Bottle" data-id="256">Manual Water Pump with 5 Gallon  Returnable Bottle</option>
+                      <option value="SIFR 500 ML" data-id="148">SIFR 500 ML</option>
+                      <option value="SIFR 1.5 LTR" data-id="154">SIFR 1.5 LTR</option>
+                      <option value="SIFR 5 Gallon" data-id="156">SIFR 5 Gallon</option>
+                      <option value="5G - Returnable" data-id="152">5G - Returnable</option>
+                      <option value="4G - Non Returnable" data-id="141">4G - Non Returnable</option>
+                      <option value="5 LTR" data-id="146">5 LTR</option>
+                      <option value="1.5 LTR" data-id="150">1.5 LTR</option>
+                      <option value="500 ML" data-id="135">500 ML</option>
+                      <option value="330 ML" data-id="139">330 ML</option>
+                      <option value="200 ML" data-id="133">200 ML</option>
+                      <option value="Cup 100ml/200ml" data-id="252">Cup 100ml/200ml</option>
+                  </select>
+                </div>
+
+                <div class="relative">
+                  <textarea id="hs-floating-textarea" class="peer p-4 block w-full border border-[#9d9d9d] rounded-sm text-sm placeholder:text-transparent focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600
+                  focus:pt-6
+                  focus:pb-2
+                  [&:not(:placeholder-shown)]:pt-6
+                  [&:not(:placeholder-shown)]:pb-2
+                  autofill:pt-6
+                  autofill:pb-2" placeholder="This is a textarea placeholder"></textarea>
+                  <label for="hs-floating-textarea" class="absolute top-0 start-0 p-4 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                    peer-focus:text-xs
+                    peer-focus:-translate-y-1.5
+                    peer-focus:text-gray-500
+                    peer-[:not(:placeholder-shown)]:text-xs
+                    peer-[:not(:placeholder-shown)]:-translate-y-1.5
+                    peer-[:not(:placeholder-shown)]:text-gray-500">Address</label>
+                </div>
+              <!-- End Form Group -->
+
+    
+
+              <button type="submit" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-sm border border-transparent bg-primary text-white hover:bg-secondary disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Submit</button>
+            </div>
+          </form>
+          <!-- End Form -->
         </div>
       </div>
     </div>
   </div>
+</div>
 
 <section>
   <img src="../images/Product-BANNER.jpg" alt="">
@@ -315,7 +314,7 @@
                Application Form
               </h3>
             </div>
-            <div class="p-4 overflow-y-auto">
+            <div id="app" class="p-4 overflow-y-auto">
               <div class="flex gap-5 items-center w-full my-5">
                 <div class="relative w-1/2">
                   <input type="text" class="peer py-3 px-4 ps-11 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary  focus:ring-primary focus:outline-primary  disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Enter First Name">
@@ -348,7 +347,102 @@
                   </div>
                 </div>
               </div>
-              <div class="w-full">
+              
+              <div class="flex gap-5">
+                <div class="relative  w-1/2">
+                    <select @change="selectedDivision" id="division" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600
+                    focus:pt-6
+                    focus:pb-2
+                    [&:not(:placeholder-shown)]:pt-6
+                    [&:not(:placeholder-shown)]:pb-2
+                    autofill:pt-6
+                    autofill:pb-2">
+                    <option selected>Choose Your Division</option>
+                      <option v-for="division in divisions" :key="division.id" :value="division.id">{{division.name}}</option>
+                
+                    </select>
+                    <label for="division" class="absolute top-0 start-0 p-4 h-full truncate pointer-events-none transition ease-in-out duration-100 border border-transparent dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                      peer-focus:text-xs
+                      peer-focus:-translate-y-1.5
+                      peer-focus:text-gray-500
+                      peer-[:not(:placeholder-shown)]:text-xs
+                      peer-[:not(:placeholder-shown)]:-translate-y-1.5
+                      peer-[:not(:placeholder-shown)]:text-gray-500">Division</label>
+                </div>
+                <div class="relative  w-1/2">
+                    <select @change="selectedDistrict" id="district" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600
+                    focus:pt-6
+                    focus:pb-2
+                    [&:not(:placeholder-shown)]:pt-6
+                    [&:not(:placeholder-shown)]:pb-2
+                    autofill:pt-6
+                    autofill:pb-2">
+                    <option selected>Choose Your District</option>
+                      <option v-for="district in districts" :key="district.id" :value="district.id">{{district.name}}</option>
+                    </select>
+                    <label for="district" class="absolute top-0 start-0 p-4 h-full truncate pointer-events-none transition ease-in-out duration-100 border border-transparent dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                      peer-focus:text-xs
+                      peer-focus:-translate-y-1.5
+                      peer-focus:text-gray-500
+                      peer-[:not(:placeholder-shown)]:text-xs
+                      peer-[:not(:placeholder-shown)]:-translate-y-1.5
+                      peer-[:not(:placeholder-shown)]:text-gray-500">District</label>
+                </div>
+              </div>
+
+              <div class="flex gap-5 my-5">
+                <div class="relative  w-1/2">
+                    <select @change="selectedUpazila" id="upazila" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600
+                    focus:pt-6
+                    focus:pb-2
+                    [&:not(:placeholder-shown)]:pt-6
+                    [&:not(:placeholder-shown)]:pb-2
+                    autofill:pt-6
+                    autofill:pb-2">
+                    <option selected>Choose Your Upazila</option>
+                      <option v-for="upazila in upazilas" :key="upazila.id" :value="upazila.id">{{upazila.name}}</option>
+                    </select>
+                    <label for="upazila" class="absolute top-0 start-0 p-4 h-full truncate pointer-events-none transition ease-in-out duration-100 border border-transparent dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                      peer-focus:text-xs
+                      peer-focus:-translate-y-1.5
+                      peer-focus:text-gray-500
+                      peer-[:not(:placeholder-shown)]:text-xs
+                      peer-[:not(:placeholder-shown)]:-translate-y-1.5
+                      peer-[:not(:placeholder-shown)]:text-gray-500">Upazila</label>
+                </div>
+                <div class="relative  w-1/2">
+                    <select id="union" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600
+                    focus:pt-6
+                    focus:pb-2
+                    [&:not(:placeholder-shown)]:pt-6
+                    [&:not(:placeholder-shown)]:pb-2
+                    autofill:pt-6
+                    autofill:pb-2">
+                    <option selected>Choose Your Union</option>
+                      <option v-for="union in unions" :key="union.id" :value="union.id">{{union.name}}</option>
+                    </select>
+                    <label for="union" class="absolute top-0 start-0 p-4 h-full truncate pointer-events-none transition ease-in-out duration-100 border border-transparent dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                      peer-focus:text-xs
+                      peer-focus:-translate-y-1.5
+                      peer-focus:text-gray-500
+                      peer-[:not(:placeholder-shown)]:text-xs
+                      peer-[:not(:placeholder-shown)]:-translate-y-1.5
+                      peer-[:not(:placeholder-shown)]:text-gray-500">Union</label>
+                </div>
+              </div>
+
+       
+
+            
+              <div class="relative my-5">
+                <input id="address" type="text" name="address" placeholder="Address/Road" class="relative w-full h-10 px-4 text-sm placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-neutral-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400 focus:border-0 focus:ring-2 focus:ring-primary" />
+                <label for="address" class="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-neutral-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
+                  Assress/Road
+                </label>
+              </div>
+
+
+              <div class="w-full my-5">
                   <div class="flex items-center justify-around w-full">
                     <h3 class="w-full">Upload Your CV</h3>
                     <input type="file" class="block w-full text-sm text-gray-500
@@ -377,7 +471,6 @@
       </div>
     </div>
   </div>
-
 
 
     <!-- Footer -->
@@ -490,8 +583,86 @@
     </div>
 
     <!-- Javascript code stat -->
-
     <script src="../main.js" ></script>
     <script src="../node_modules/preline/dist/preline.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      var app = Vue.createApp({
+        data(){
+          return{
+            msg: "Vue Working",
+            divisions: [],
+            districts: [],
+            unions: [],
+            upazilas: [],
+            
+          }
+        },
+        mounted() {
+    // Fetch divisions data
+    fetch('http://localhost:5173/divisions.json')
+      .then(res => res.json())
+      .then(data => {
+        // Assign the fetched data to the component property
+        this.divisions = data[2].data.sort((a, b) => a.name.localeCompare(b.name));
+      })
+      .catch(error => {
+        console.error('Error fetching divisions data:', error);
+      });
+
+
+  },
+
+  methods: {
+    selectedDivision(selectDivision) {
+      if(!selectDivision){
+        return this.districts = "";
+      }
+
+          // Fetch districts data
+    fetch('http://localhost:5173/districts.json')
+      .then(res => res.json())
+      .then(data => {
+        this.districts = data[2].data.sort((a, b) => a.name.localeCompare(b.name)).filter((dis) => dis.division_id === selectDivision.target.value);
+      })
+      .catch(error => {
+        console.error('Error fetching districts data:', error);
+      });
+      },
+      selectedDistrict(selectDistrict) {
+        if(!selectDistrict){
+          return this.upazilas = "";
+        }
+        
+    // Fetch upazilas data
+    fetch('http://localhost:5173/upazilas.json')
+      .then(res => res.json())
+      .then(data => {
+        this.upazilas = data[2].data.sort((a, b) => a.name.localeCompare(b.name)).filter((upa) => upa.district_id === selectDistrict.target.value);
+      })
+      .catch(error => {
+        console.error('Error fetching upazilas data:', error);
+      });
+      },
+      selectedUpazila(selectUpazila) {
+        if(!selectUpazila){
+          return this.unions = "";
+        }
+      //  // Fetch unions data
+    fetch('http://localhost:5173/unions.json')
+      .then(res => res.json())
+      .then(data => {
+        this.unions = data[2].data.sort((a, b) => a.name.localeCompare(b.name)).filter((uni) => uni.upazilla_id === selectUpazila.target.value);
+      })
+      .catch(error => {
+        console.error('Error fetching unions data:', error);
+      });
+      }
+    }
+  });
+
+    
+      app.mount('#app')
+    </script>
   </body>
 </html>
