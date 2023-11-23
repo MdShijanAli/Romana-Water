@@ -11,6 +11,55 @@
       .shad {
         box-shadow: 0px 8px 16px 0px rgb(17 34 139 / 23%);
       }
+
+      .single-image-box{
+  height: 280px;
+    background-size: cover;
+    background-position: center;
+    /* background-color: #cccc; */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: linear-gradient(transparent 40%, #cccc 40%) no-repeat;
+    border-radius: 5px;
+
+}
+.single-image-box img{
+  margin: auto !important;
+    width: unset !important;
+    height: 85% !important;
+    padding-top: 20px;
+}
+.single-image-box:hover {
+    background: linear-gradient(transparent 40%, #003376 40%) no-repeat;
+}
+.single-image-box:hover img{
+  @keyframes upDown {
+
+0%,
+100% {
+  transform: translateY(0);
+}
+
+50% {
+  transform: translateY(2px);
+}
+}
+
+animation: upDown 3s ease-in infinite alternate-reverse;
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    /* display: none; */
+    width: 100%;
+    z-index: 1;
+}
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
     </style>
   </head>
 
@@ -270,7 +319,112 @@
 
     <!-- Career Page Content Start -->
 
+   <div>
+    <div class="max-w-7xl mx-auto px-6 py-10">
+      <div class="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+  
+                <div class="w-full h-full box">
+                    <!-- Start Testimonial -->
+                      <div class="single-image-box">
+                         <img class="mx-auto w-full h-full pt-4" src="../images/1_Mai-Bottle-1000x1000.png" alt="">
+                      </div>
+                      <div class="flex items-center justify-between mt-5">
+                        <h3 class="font-bold">1.5 LTR</h3>
+                        <button class="px-2 py-1 border-2 font-semibold hover:bg-primary hover:text-white transition duration-500 ease-in-out hover:border-primary border-black rounded-full">Get Now</button>
+                      </div>
+                    <!-- End Testimonial -->
+                </div>
+          
+                <div class="w-full h-full box">
+                    <!-- Start Testimonial -->
+                      <div class="single-image-box">
+                         <img class="mx-auto w-full h-full pt-4" src="../images/1.5.png" alt="">
+                      </div>
+                      <div class="flex items-center justify-between mt-5">
+                        <h3 class="font-bold">1.5 LTR</h3>
+                        <button class="px-2 py-1 border-2 font-semibold hover:bg-primary hover:text-white transition duration-500 ease-in-out hover:border-primary border-black rounded-full">Get Now</button>
+                      </div>
+                    <!-- End Testimonial -->
+                </div>
+            
+                <div class="w-full h-full box">
+                    <!-- Start Testimonial -->
+                      <div class="single-image-box">
+                         <img class="mx-auto w-full h-full pt-4" src="../images/200ml.png" alt="">
+                      </div>
+                      <div class="flex items-center justify-between mt-5">
+                        <h3 class="font-bold">1.5 LTR</h3>
+                        <button class="px-2 py-1 border-2 font-semibold hover:bg-primary hover:text-white transition duration-500 ease-in-out hover:border-primary border-black rounded-full">Get Now</button>
+                      </div>
+                    <!-- End Testimonial -->
+                </div>
+        
+                <div class="w-full h-full box">
+                    <!-- Start Testimonial -->
+                      <div class="single-image-box">
+                         <img class="mx-auto w-full h-full pt-4" src="../images//2Mai-Bottle-1000x1000.png" alt="">
+                      </div>
+                      <div class="flex items-center justify-between mt-5">
+                        <h3 class="font-bold">1.5 LTR</h3>
+                        <button class="px-2 py-1 border-2 font-semibold hover:bg-primary hover:text-white transition duration-500 ease-in-out hover:border-primary border-black rounded-full">Get Now</button>
+                      </div>
+                    <!-- End Testimonial -->
+                </div>
+          
+                <div class="w-full h-full box">
+                    <!-- Start Testimonial -->
+                      <div class="single-image-box">
+                         <img class="mx-auto w-full h-full pt-4" src="../images/330-ML.png" alt="">
+                      </div>
+                      <div class="flex items-center justify-between mt-5">
+                        <h3 class="font-bold">1.5 LTR</h3>
+                        <button class="px-2 py-1 border-2 font-semibold hover:bg-primary hover:text-white transition duration-500 ease-in-out hover:border-primary border-black rounded-full">Get Now</button>
+                      </div>
+                    <!-- End Testimonial -->
+                </div>
+      
+                <div class="w-full h-full box">
+                    <!-- Start Testimonial -->
+                      <div class="single-image-box">
+                         <img class="mx-auto w-full h-full pt-4" src="../images/4-G-NBR.png" alt="">
+                      </div>
+                      <div class="flex items-center justify-between mt-5">
+                        <h3 class="font-bold">1.5 LTR</h3>
+                        <button class="px-2 py-1 border-2 font-semibold hover:bg-primary hover:text-white transition duration-500 ease-in-out hover:border-primary border-black rounded-full">Get Now</button>
+                      </div>
+                    <!-- End Testimonial -->
+                </div>
+            
+                <div class="w-full h-full box">
+                    <!-- Start Testimonial -->
+                      <div class="single-image-box">
+                         <img class="mx-auto w-full h-full pt-4" src="../images/5-G-New.png" alt="">
+                      </div>
+                      <div class="flex items-center justify-between mt-5">
+                        <h3 class="font-bold">1.5 LTR</h3>
+                        <button class="px-2 py-1 border-2 font-semibold hover:bg-primary hover:text-white transition duration-500 ease-in-out hover:border-primary border-black rounded-full">Get Now</button>
+                      </div>
+                    <!-- End Testimonial -->
+                </div>
+        
+                <div class="w-full h-full box">
+                    <!-- Start Testimonial -->
+                      <div class="single-image-box">
+                         <img class="mx-auto w-full h-full pt-4" src="../images/5-Ltr.png" alt="">
+                      </div>
+                      <div class="flex items-center justify-between mt-5">
+                        <h3 class="font-bold">1.5 LTR</h3>
+                        <button class="px-2 py-1 border-2 font-semibold hover:bg-primary hover:text-white transition duration-500 ease-in-out hover:border-primary border-black rounded-full">Get Now</button>
+                      </div>
+                    <!-- End Testimonial -->
+                </div>
 
+   
+          
+        </ul>
+    </div>
+    </div>
+   </div>
 
     <!-- Footer -->
 

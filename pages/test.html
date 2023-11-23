@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar</title>
+  <style>
+    *{
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      background-color: #343434;
+    }
+    .container{
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.solar-system{
+  position: relative;
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  border: 1px solid #909090;
+  animation: rotation 20s linear infinite;
+}
+.sun{
+  height: 100px;
+  width:100px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff8037;
+  border-radius: 50%;
+  animation: pulse-sun 2s linear infinite;
+}
+.planet{
+  position: absolute;
+  top:-60px;
+  left:50%;
+  transform: translate(-50%,0);
+  height: 150px;
+  width: 150px;
+  border: 1px solid #909090;
+  border-radius: 50%;
+  animation: rotation 10s linear infinite;
+}
+.planet1{
+  position: absolute;
+  top:-60px;
+  right:50%;
+  transform: translate(-50%,0);
+  height: 150px;
+  width: 150px;
+  border: 1px solid #909090;
+  border-radius: 50%;
+  animation: rotation 10s linear infinite;
+}
+.planet2{
+  position: absolute;
+  bottom:-60px;
+  right:50%;
+  transform: translate(-50%,0);
+  height: 150px;
+  width: 150px;
+  border: 1px solid #909090;
+  border-radius: 50%;
+  animation: rotation 10s linear infinite;
+}
+.earth{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: #3453fe;
+  height: 50px;
+  width:50px;
+  border-radius: 50%;
+}
+.moon{
+  position: absolute;
+  top:-10px;
+  left: 50%;
+  transform: translate(-50%,0);
+  background-color: #fefafa;
+  height: 20px;
+  width:20px;
+  border-radius: 50%;
+   
+  animation: pulse-moon 2s linear infinite;
+}
+
+@keyframes pulse-sun {
+  from{
+    box-shadow: 0 0 0 0 #ff803790;
+  }
+  to{
+    box-shadow: 0 0 0 25px rgba(0,0,0,0);
+  }
+}
+
+@keyframes pulse-moon {
+  from{
+    box-shadow: 0 0 0 0 #fefafa90;
+  }
+  to{
+    box-shadow: 0 0 0 10px rgba(0,0,0,0);
+  }
+}
+@keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="solar-system">
+      <div class="sun"></div>
+      <div class="planet">
+        <div class="earth"></div>
+        <div class="moon"></div>
+      </div>
+      <div class="planet1">
+        <div class="earth"></div>
+        <div class="moon"></div>
+      </div>
+      <div class="planet2">
+        <div class="earth"></div>
+        <div class="moon"></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

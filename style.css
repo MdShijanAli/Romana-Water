@@ -39,8 +39,6 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
 
 
 
-/* animation */
-
 @keyframes upDown {
 
   0%,
@@ -68,12 +66,11 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
   opacity: 0;
   z-index: -2;
   padding-right: 20px;
-  transition: left 2s, opacity 2s;
+  transition: left 2s, opacity 1s;
 }
 .img-dev:hover .hero-div-1{
   opacity: 1;
   left: -90%;
-  top: 25px;
 }
 .hero-div-2 {
   position: absolute;
@@ -85,12 +82,11 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
   opacity: 0;
   z-index: -2;
   padding-right: 20px;
-  transition: left 2s, opacity 2s;
+  transition: left 2s, opacity 1s;
 }
 .img-dev2:hover .hero-div-2{
   opacity: 1;
   left: -90%;
-  top: 25px;
 }
 .hero-div-3 {
   position: absolute;
@@ -102,12 +98,11 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
   opacity: 0;
   z-index: -2;
   padding-right: 20px;
-  transition: left 3s, opacity 2s;
+  transition: left 2s, opacity 1s;
 }
 .img-dev3:hover .hero-div-3{
   opacity: 1;
   left: -160%;
-  top: 25px;
 }
 
 .hero-div-4 {
@@ -125,7 +120,6 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
 .img-dev4:hover .hero-div-4{
   opacity: 1;
   left: -140%;
-  top: 25px;
 }
 .hero-div-5 {
   position: absolute;
@@ -142,7 +136,6 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
 .img-dev5:hover .hero-div-5{
   opacity: 1;
   right: -180%;
-  top: 25px;
 }
 .hero-div-6 {
   position: absolute;
@@ -159,7 +152,6 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
 .img-dev6:hover .hero-div-6{
   opacity: 1;
   right: -220%;
-  top: 25px;
 }
 .hero-div-7 {
   position: absolute;
@@ -176,7 +168,6 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
 .img-dev7:hover .hero-div-7{
   opacity: 1;
   right: -160%;
-  top: 25px;
 }
 
 .hero-div-8 {
@@ -194,8 +185,7 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
 .img-dev8:hover .hero-div-8{
   opacity: 1;
   right: -130%;
-  top: 25px;
-}
+} 
 
 
 @keyframes round1 {
@@ -367,4 +357,100 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
 
 .animate-round8 {
   animation: round8 20s ease-in infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Solar Css */
+
+.solar-system{
+  animation: rotation 20s linear infinite;
+}
+
+
+
+
+.planet {
+  position: absolute;
+  top: -10%;
+  right: -15%;
+  transform: translate(-50%,0);
+  /* animation: rotation 10s linear infinite; */
+}
+.planet1 {
+  position: absolute;
+  top: 8%;
+  left: 27%;
+  transform: translate(-50%,0);
+  /* animation: rotation 10s linear infinite; */
+}
+.planet2 {
+  position: absolute;
+  top: 42%;
+  left: 15%;
+  transform: translate(-50%,0);
+  /* animation: rotation 10s linear infinite; */
+}
+.planet3 {
+  position: absolute;
+  top: 75%;
+  right: -49%;
+  transform: translate(-50%,0);
+  /* animation: rotation 10s linear infinite; */
+}
+.planet4 {
+  position: absolute;
+  bottom: -9%;
+  right: -15%;
+  transform: translate(-50%,0);
+  /* animation: rotation 10s linear infinite; */
+}
+.planet5 {
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  transform: translate(-50%,0);
+  /* animation: rotation 10s linear infinite; */
+}
+.planet6 {
+  position: absolute;
+  top: 8%;
+  right: -53%;
+  transform: translate(-50%,0);
+  /* animation: rotation 10s linear infinite; */
+}
+.planet7 {
+  position: absolute;
+  top: 43%;
+  right: -63%;
+  transform: translate(-50%,0);
+  /* animation: rotation 10s linear infinite; */
+}
+
+
+
+
+@keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
