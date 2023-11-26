@@ -1,3 +1,7 @@
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
+
 
 
   // Get the navbar element
@@ -5,31 +9,16 @@
     var navbar = document.getElementById('mainNavbar');
 
     if (window.scrollY > 0) {
-        navbar.classList.add('top-0');
+      navbar.classList.add('top-0');
+      navbar.classList.add('scrolled');
     } else {
-        navbar.classList.remove('top-0');
+      navbar.classList.remove('top-0');
+      navbar.classList.remove('scrolled');
     }
 });
 
-  const currentDate = new Date();
-  const currentYear = currentDate.getFullYear();
-  document.getElementById("currentYear").textContent = currentYear;
+
   
-  
-  const navbar = document.getElementById('mainNavbar');
-// Function to toggle the 'scrolled' class based on the scroll position
-function handleScroll() {
-  const scrollY = window.scrollY;
-  // Adjust this value based on when you want the background color to change
-  const scrollThreshold = 50;
-  if (scrollY > scrollThreshold) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-}
-// Listen for the scroll event and call the handleScroll function
-window.addEventListener('scroll', handleScroll);
 
 
 
