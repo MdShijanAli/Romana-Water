@@ -12,11 +12,14 @@ export default {
     extend: {
       colors: {
         // my custom colors 
-        'primary': '#003376', 
-        'secondary': '#363394', 
+        'primary': '#333333', 
+        'secondary': '#ED1C24', 
         'third': '#F7EBEC', 
         'background': '#E7F0FD',
         'paragraph': '#1D306D',
+        'footerBG': '#26292E',
+        'footerBottom': '#36393F',
+        'footerText': '#cacaca'
       },
       fontSize: {
         // my custom font sizes 

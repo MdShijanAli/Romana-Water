@@ -13,6 +13,8 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
   font-family: 'Montserrat', sans-serif;
 }
 
+
+
 .menu-item {
   position: relative;
 }
@@ -36,6 +38,9 @@ h1,h2,h3,h4,h5,h6,p,span,a,li{
   background-color: #F7EBEC !important; /* You may need to adjust this color */
   transition: background-color 0.3s ease-in-out;
 }
+
+
+
 
 
 
