@@ -24,6 +24,7 @@ export default {
       fontSize: {
         // my custom font sizes 
         'h1': '36px',
+        'h2': '25px',
         'paragraph': '15px',
          'h5': '16px',
         'h6': '14px',
