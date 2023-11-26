@@ -1,25 +1,15 @@
 
 
   // Get the navbar element
-  const navbar = document.getElementById('mainNavbar');
+  window.addEventListener('scroll', function () {
+    var navbar = document.getElementById('mainNavbar');
 
-  // Function to toggle the 'scrolled' class based on the scroll position
-  function handleScroll() {
-    const scrollY = window.scrollY;
-
-    // Adjust this value based on when you want the background color to change
-    const scrollThreshold = 50;
-
-    if (scrollY > scrollThreshold) {
-      navbar.classList.add('scrolled');
+    if (window.scrollY > 0) {
+        navbar.classList.add('top-0');
     } else {
-      navbar.classList.remove('scrolled');
+        navbar.classList.remove('top-0');
     }
-  }
-
-  // Listen for the scroll event and call the handleScroll function
-  window.addEventListener('scroll', handleScroll);
-
+});
 
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -108,7 +98,7 @@ fetch('http://localhost:5173/unions.json')
   template: `
   <div class="sm:flex grid gap-5">
   <div class="relative  sm:w-1/2 w-full">
-      <select @change="selectedDivision" id="division" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600
+      <select @change="selectedDivision" id="division" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none 
       focus:pt-6
       focus:pb-2
       [&:not(:placeholder-shown)]:pt-6
@@ -128,7 +118,7 @@ fetch('http://localhost:5173/unions.json')
         peer-[:not(:placeholder-shown)]:text-gray-500">Division</label>
   </div>
   <div class="relative  sm:w-1/2 w-full">
-      <select @change="selectedDistrict" id="district" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600
+      <select @change="selectedDistrict" id="district" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none 
       focus:pt-6
       focus:pb-2
       [&:not(:placeholder-shown)]:pt-6
@@ -150,7 +140,7 @@ fetch('http://localhost:5173/unions.json')
 
 <div class="sm:flex grid gap-5 my-5">
   <div class="relative  sm:w-1/2 w-full">
-      <select @change="selectedUpazila" id="upazila" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600
+      <select @change="selectedUpazila" id="upazila" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none 
       focus:pt-6
       focus:pb-2
       [&:not(:placeholder-shown)]:pt-6
@@ -169,7 +159,7 @@ fetch('http://localhost:5173/unions.json')
         peer-[:not(:placeholder-shown)]:text-gray-500">Upazila</label>
   </div>
   <div class="relative  sm:w-1/2 w-full">
-      <select id="union" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600
+      <select id="union" class="peer p-4 pe-9 block w-full bg-gray-100 border-transparent rounded-sm text-sm focus:border-primary focus:ring-primary focus:outline-primary disabled:opacity-50 disabled:pointer-events-none 
       focus:pt-6
       focus:pb-2
       [&:not(:placeholder-shown)]:pt-6
