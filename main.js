@@ -18,8 +18,6 @@ document.getElementById("currentYear").textContent = currentYear;
 });
 
 
-  
-
 
 
 var app = Vue.createApp({
@@ -61,14 +59,61 @@ var app = Vue.createApp({
         },
       ],
       selectedJob: "",
+      blogs: [
+        {
+          id: 1,
+          img: "../images/blog-1.jpg",
+          title: "Smile Drinking Water",
+          description: "Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh",
+          date: "27/11/2023"
+        },
+        {
+          id: 2,
+          img: "../images/blog-2.jpg",
+          title: "Smile Drinking Water",
+          description: "Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh",
+          date: "22/11/2023"
+        },
+        {
+          id: 3,
+          img: "../images/blog-3.jpg",
+          title: "Smile Drinking Water",
+          description: "Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh",
+          date: "26/11/2023"
+        },
+        {
+          id: 4,
+          img: "../images/blog-4.jpeg",
+          title: "Smile Drinking Water",
+          description: "Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh",
+          date: "28/11/2023"
+        },
+      ]
    }
   },
 
+  computed: {
+    sortedBlogs() {
+      // Sort blogs by date in descending order
+      return this.blogs.slice().sort((a, b) => {
+        const dateA = new Date(this.convertDateFormat(a.date));
+        const dateB = new Date(this.convertDateFormat(b.date));
+        return dateB - dateA;
+      });
+    },
+  },
   methods: {
+    convertDateFormat(dateString) {
+      // Convert date format from DD/MM/YYYY to YYYY-MM-DD
+      const [day, month, year] = dateString.split('/');
+      return `${year}-${month}-${day}`;
+    },
+
     selectJob(post) {
       this.selectedJob = post
     }
-  }
+  },
+
 
 });
 
