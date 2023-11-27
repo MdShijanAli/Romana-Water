@@ -20,8 +20,11 @@ document.getElementById("currentYear").textContent = currentYear;
 
 
 
+
+
 var app = Vue.createApp({
   data() {
+
     return {
       msg: "Connected",
       jobs: [
@@ -58,41 +61,47 @@ var app = Vue.createApp({
           applyLastDate: "2023-12-15"
         },
       ],
-      selectedJob: "",
       blogs: [
         {
           id: 1,
-          img: "../images/blog-1.jpg",
+          img: "https://www.unicef.org/turkiye/sites/unicef.org.turkiye/files/styles/press_release_feature/public/UN0389288.jpg?itok=x1xPAXk-",
           title: "Smile Drinking Water",
           description: "Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh",
           date: "27/11/2023"
         },
         {
           id: 2,
-          img: "../images/blog-2.jpg",
+          img: "https://i.pinimg.com/736x/a6/a8/4e/a6a84ebc3220055702982b340ae4d943.jpg",
           title: "Smile Drinking Water",
           description: "Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh",
           date: "22/11/2023"
         },
         {
           id: 3,
-          img: "../images/blog-3.jpg",
+          img: "https://pbs.twimg.com/media/Em24bjnXMAACJ6W.jpg",
           title: "Smile Drinking Water",
           description: "Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh",
           date: "26/11/2023"
         },
         {
           id: 4,
-          img: "../images/blog-4.jpeg",
+          img: "https://discovery.sndimg.com/content/dam/images/discovery/fullset/2020/1/31/GettyImages-1055505160.jpg.rend.hgtvcom.406.406.suffix/1580501770222.jpeg",
           title: "Smile Drinking Water",
           description: "Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh. Smile Drinking Water is one of the most popular and beautiful water company in bangladesh",
           date: "28/11/2023"
         },
       ]
-   }
+    }
+    
+    
+  },
+  created() {
+    console.log("Blogs array:", this.blogs);
   },
 
+
   computed: {
+
     sortedBlogs() {
       // Sort blogs by date in descending order
       return this.blogs.slice().sort((a, b) => {
