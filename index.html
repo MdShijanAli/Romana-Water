@@ -469,7 +469,7 @@
 
 
           <div
-            class="md:hidden block solar-system w-[200px] h-[200px] relative rounded-full border border-[#909090] mx-auto my-20">
+            class="md:hidden block solar-system w-[200px] h-[200px] relative rounded-full border border-[#909090] mx-auto md:my-20 mt-10">
             <div>
               <img class="mx-auto py-10  w-[50%]" src="./images/water-splash-5gr.png" alt="">
             </div>
@@ -586,7 +586,7 @@
           <h1 class="md:text-h1 text-h4 font-bold text-primary text-center mb-10">Our Latest Blogs</h1>
             <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-5">
               <div v-for="blog in sortedBlogs.slice(0,3)" :key="blog.id" class="border shad rounded-sm">
-                <div class="overflow-hidden md:h-[250px] h-[150px] w-full">
+                <div class="overflow-hidden md:h-[350px] h-[150px] w-full">
                   <img class="bg-cover w-full h-full bg-center hover:scale-110 transition duration-700 ease-in-out" :src="blog.img" alt="">
                 </div>
                 <div class="p-5">
